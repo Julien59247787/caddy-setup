@@ -1,3 +1,7 @@
 nodenimiq1.nimiq-ju.fr {
-	reverse_proxy 192.168.1.15:80
+	reverse_proxy https://192.168.1.15:443 {
+		transport http {
+			tls_insecure_skip_verify
+		}
+	}
 }
