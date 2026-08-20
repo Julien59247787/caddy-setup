@@ -1,0 +1,7 @@
+xcash-labs.xcash-ju.fr {
+	reverse_proxy 10.0.0.28:80
+}
+
+nodenimiq2.nimiq-ju.fr {
+	reverse_proxy 10.0.0.15:80
+}
