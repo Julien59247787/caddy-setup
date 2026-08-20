@@ -1,8 +1,16 @@
+{
+	admin 127.0.0.1:2019
+}
+
 xcash-labs.xcash-ju.fr {
 	reverse_proxy https://10.0.0.28:443 {
 		transport http {
 			tls_insecure_skip_verify
 		}
+	}
+	log {
+		output file /var/log/caddy/xcash-labs.log
+		format json
 	}
 }
 
@@ -11,5 +19,9 @@ nodenimiq2.nimiq-ju.fr {
 		transport http {
 			tls_insecure_skip_verify
 		}
+	}
+	log {
+		output file /var/log/caddy/nodenimiq2.log
+		format json
 	}
 }

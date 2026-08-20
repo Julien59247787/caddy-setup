@@ -1,0 +1,9 @@
+[caddy-scan]
+enabled = true
+filter = caddy-scan
+logpath = /var/log/caddy/*.log
+port = http,https
+maxretry = 15
+findtime = 60
+bantime = 86400
+banaction = ufw
